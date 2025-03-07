@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      11 - watermelon_0: 5993199802644160530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

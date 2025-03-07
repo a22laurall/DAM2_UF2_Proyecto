@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FruitController : MonoBehaviour
-{
-    //public static bool inBasket = false;
-    public AudioClip collisionSoundClip;     
+{    public AudioClip collisionSoundClip;     
 
     private Dictionary<string, string> fruitEvolution = new Dictionary<string, string>()
     {
@@ -105,7 +103,7 @@ public class FruitController : MonoBehaviour
         {
             float velocidadY = GetComponent<Rigidbody2D>().linearVelocity.y;
 
-            if (velocidadY > 0) 
+            if (velocidadY > 0) //verifica que no está cayend
             {
                 GameManager.instance.GameOver();
             }

@@ -79,8 +79,7 @@ public class BasketController : MonoBehaviour
                 currentFruitRb.gravityScale = 1;
                 currentFruitRb.AddForce(Vector2.down * 8f, ForceMode2D.Impulse);
 
-                audioSource.PlayOneShot(caidaSoundClip); // Reproduce el sonido
-
+                audioSource.PlayOneShot(caidaSoundClip); 
             }
 
             isThrowed = true;

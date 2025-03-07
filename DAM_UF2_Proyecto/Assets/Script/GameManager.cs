@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] TMPro.TextMeshProUGUI txtScore;
     int score;
-    int maxScore;
     public static GameManager instance;
 
     public static GameManager GetInstance()
@@ -65,9 +64,9 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator WaitBeforeSceneChange(float waitTime)
     {
-        yield return new WaitForSecondsRealtime(waitTime);  // Espera sin afectar el Time.timeScale (usando WaitForSecondsRealtime)
+        yield return new WaitForSecondsRealtime(waitTime);  // Espera sin afectar el Time.timeScale 
         Time.timeScale = 1; // Reiniciar el tiempo
-        SceneManager.LoadScene(3);  // Cargar la escena del Game Over (por ejemplo, escena 3)
+        SceneManager.LoadScene(3);  
     }
 
     public void RestartGame()
@@ -79,6 +78,6 @@ public class GameManager : MonoBehaviour
 
     void ResetGame()
     {
-        score = 0;  // Reiniciar puntaje
+        score = 0;  
     }
 }
