@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI txtScore;
     int score;
     public static GameManager instance;
+    public static bool gameOver = false;
 
     public static GameManager GetInstance()
     {
@@ -39,9 +40,9 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         Debug.Log("¡Juego terminado!");
+        gameOver = true;
         Time.timeScale = 0;
         //SceneManager.LoadScene(3);
-
         StartCoroutine(WaitBeforeSceneChange(2f)); 
     }
 

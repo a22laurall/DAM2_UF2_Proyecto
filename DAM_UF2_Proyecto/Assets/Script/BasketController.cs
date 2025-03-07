@@ -72,7 +72,7 @@ public class BasketController : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) && GameManager.gameOver == false)
         {
             if (currentFruitRb != null)
             {
@@ -85,7 +85,7 @@ public class BasketController : MonoBehaviour
             isThrowed = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D) && GameManager.gameOver == false)
         {
             if (isThrowed)
             {

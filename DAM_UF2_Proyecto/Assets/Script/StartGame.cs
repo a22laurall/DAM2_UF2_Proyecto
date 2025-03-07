@@ -22,6 +22,7 @@ public class StartGame : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R) && SceneManager.GetActiveScene().buildIndex == 3)
         {
+            GameManager.gameOver = false;
             GameManager.GetInstance().RestartGame();
         }
 
